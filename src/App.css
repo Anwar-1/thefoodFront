@@ -1,0 +1,335 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #ee3f9f;
+  --error: #e7195a;
+}
+body {
+  background: rgb(243, 241, 241);
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background: rgb(253, 219, 24);
+  background: radial-gradient(circle, rgb(247, 93, 4) 0%, rgb(241, 125, 58) 100%);
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color:  #fffffe;
+  text-decoration: none;
+ /* text-shadow: 2px 2px 4px rgb(245, 174, 69);*/
+
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  
+  /*box-shadow:  2px 2px 5px rgba(178, 214, 14, 0.05)*/
+  box-shadow: rgba(90, 34, 1, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  /*color: var(--primary);*/
+  color:  #833501;
+ 
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+ 
+  margin-bottom: 5px;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+select {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+select option {
+  font-family: 'Arial', sans-serif; /* Change to desired font-family */
+  color: rgb(250, 112, 0); /* Change to desired text color */
+  background-color: #eceae9; 
+  /* Change to desired background color */
+  text-align: center;
+  font-weight: bolder;
+  font-style: var(--c);
+}
+
+form button {
+  /*
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  */
+  border: 0;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 7px;
+  cursor: pointer;
+  --c:  #f77d2b;
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a, nav button {
+  margin-left: 10px;
+}
+nav button {
+  background: #fff;
+ /* color: var(--primary);*/
+  border: 2px solid #fcce00 ;
+  color: #ff6912;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  /*background: #fff; */
+ 
+ 
+ background-image: url('https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg');
+ /*https://images.myperfectcolor.com/repositories/images/colors/ralph-lauren-gh100-yellowhammer-paint-color-match-1.jpg*/
+ background-attachment: fixed;  
+ background-repeat: no-repeat;  
+ background-size: cover; 
+ background-position: center; 
+ border-radius: 4px;
+ 
+ 
+}
+
+img{
+  width: 50%;
+  height: 100%;
+  
+}
+
+/*
+.waviy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;  
+  background-color: #111;
+}
+
+.waviy {
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.waviy span {
+  display: inline-block;
+  width: 40px; 
+  animation: waviy 1s infinite;
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+*/
+
+
+ button {
+  margin-top: 5%;
+  justify-content: center;
+  border: 0;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 7px;
+  cursor: pointer;
+  --c:  #f77d2b; /* the color*/
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.waviy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;  
+ /* background-color: #111; */
+ background-image: url('https://static.vecteezy.com/system/resources/thumbnails/023/516/920/small/fresh-veggie-border-organic-vegetables-on-natural-black-background-ideal-for-healthy-food-designs-generative-ai-photo.jpg');
+ background-attachment: fixed;  /* Make background img fixed */
+ background-repeat: no-repeat;  /* Don't repeat the img */
+ background-size: cover; /* Cover the entire screen */
+ background-position: center; /* Pull img to center */
+ 
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+h3{
+ /* color:  #ac1a6a;*/
+ color:  #833501;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(245, 228, 239, 0.5);
+}
+
+.imgf {
+  width: 400px;
+  height: 300px;
+}
+
+
+
+
+
+
+/*  css form  */ 
