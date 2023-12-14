@@ -82,27 +82,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Serach = () => {
-  const centerTextStyle = {
-    textAlign: 'center',
-    
-  };
+const centerTextStyle = {
+  textAlign: 'center',
+};
 
-  const cardContainerStyle = {
-    display: 'flex',
-    justifyContent: 'space-around',
-  };
+const cardContainerStyle = {
+  display: 'flex',
+  flexDirection: 'column', // Change to column
+  alignItems: 'center', // Center the items in the column
+};
 
-  const cardStyle = {
-    width: '400px', // Adjust the width as needed
-    margin: '10px',
-    textAlign: 'center',
-  };
 
-  const cardContainerStyle10 = {
-    textAlign: 'center',
-    display: 'flex',
-    justifyContent: 'space-around',
-  }
+const cardStyle = {
+  width: '400px',
+  margin: '10px',
+  textAlign: 'center',
+};
+
+const cardContainerStyle10 = {
+  textAlign: 'center',
+  display: 'flex',
+  justifyContent: 'space-around',
+}
 
   return (
     <>
